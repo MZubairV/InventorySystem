@@ -1,0 +1,26 @@
+SMAP
+puchasing_jsp.java
+JSP
+*S JSP
+*F
++ 0 puchasing.jsp
+puchasing.jsp
++ 1 header.jsp
+header.jsp
++ 2 footer.jsp
+footer.jsp
+*L
+5,27:54
+32,7:82
+38,4:89
+5#1,36:93
+41#0,99:128
+140,2:228
+141,2:230
+143,9:232,3
+152,2:259
+154,2:262
+155,11:264
+5#2,18:275
+165#0,4:292
+*E

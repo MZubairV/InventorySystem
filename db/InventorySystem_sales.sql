@@ -1,0 +1,57 @@
+-- MySQL dump 10.13  Distrib 5.7.20, for Linux (x86_64)
+--
+-- Host: localhost    Database: InventorySystem
+-- ------------------------------------------------------
+-- Server version	5.7.20-0ubuntu0.16.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `sales`
+--
+
+DROP TABLE IF EXISTS `sales`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sales` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `customer` varchar(45) DEFAULT NULL,
+  `place` varchar(45) DEFAULT NULL,
+  `mobile` int(11) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `total` decimal(11,2) DEFAULT NULL,
+  `date` datetime DEFAULT NULL,
+  `totalProfit` decimal(11,2) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sales`
+--
+
+LOCK TABLES `sales` WRITE;
+/*!40000 ALTER TABLE `sales` DISABLE KEYS */;
+INSERT INTO `sales` VALUES (1,'ZUBAIR','KERAL',231456789,'zubair@mail.com',33.60,'2017-12-10 13:21:03',5.60),(2,'joseph','KERAL',23145662,'joseph@mail.com',595.70,'2017-12-10 13:21:43',134.70),(3,'anandhu','KERAL',23145662,'anandhu@mail.com',617.30,'2017-12-10 13:22:26',138.30),(4,'Babu','Bangalore',23145662,'babu@mail.com',854.90,'2017-12-10 13:23:16',177.90),(5,'soumya','Bangalore',23145662,'soumya@mail.com',854.90,'2017-12-11 13:23:55',177.90),(6,'muhammed','Bangalore',23145662,'md@mail.com',235.20,'2017-12-11 13:24:41',39.20),(7,'RAMESH','KOCHI',9564231,'rms@gml.in',1065.60,'2017-12-11 20:23:11',177.60),(8,'AKHIL','KERALA',5412365,'akhil@abc.IN',722.90,'2017-12-11 23:59:03',155.90),(9,'JOHN','BANGALORE',95321,'john@abc.in',1657.50,'2017-12-12 00:00:13',382.50),(10,'JOHN','BANGALORE',95321,'john@abc.in',1657.50,'2017-12-12 00:00:33',382.50),(11,'RAMU','BANGALORE',9632145,'ramu@gemil.com',552.50,'2017-12-12 00:01:59',127.50),(12,'ABHIRAM','BANGALORE',652314,'abi@gemil.com',1209.60,'2017-12-12 00:03:42',201.60),(13,'MONISH','KOZHIKKOD',521463,'monish@gemil.in',767.30,'2017-12-12 01:01:26',163.30),(14,'ZUBAIR','KERALA',96325632,'mzv@mzv.in',563.30,'2017-12-12 04:50:41',129.30);
+/*!40000 ALTER TABLE `sales` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-12-12  6:31:37

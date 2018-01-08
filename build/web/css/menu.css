@@ -1,0 +1,9 @@
+#menu ul li a{
+    color:white;
+    font-size: 22px;
+}
+#menu ul li:hover{
+    background-color: white;
+    border-radius: 20px;
+}
+
